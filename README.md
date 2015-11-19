@@ -1,2 +1,7 @@
 # klmn-landing
-KLMN project promo site
+
+> KLMN project promo site
+
+```
+npm build
+```
