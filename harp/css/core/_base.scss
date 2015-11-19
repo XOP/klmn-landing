@@ -1,0 +1,64 @@
+/* Base
+---------------------------------------------------------------------------------- */
+
+/* Core
+-------------------------------------------------- */
+
+html {
+    height: 100%;
+	font-size: 10px;
+    }
+
+body {
+    margin: 0;
+    min-height: 100%;
+
+    font: normal #{$fs-normal}/#{$lh-normal} $ff-main;
+    color: $c-base;
+	background: $c-bg url(../img/pattern.png) repeat;
+    }
+
+/* /Core */
+
+
+/* Links
+-------------------------------------------------- */
+
+a {
+    color: $c-dark;
+
+    &:hover {
+        color: $c-light;
+        }
+
+    &:active {
+        color: $c-light;
+        }
+    }
+
+/* /Links */
+
+
+/* Lists
+-------------------------------------------------- */
+
+ol, ul, menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+/* /Lists */
+
+
+/* Paragrgaphs
+-------------------------------------------------- */
+
+p {
+	margin: $grid-2;
+	}
+
+/* /Paragrgaphs */
+
+/* /Base
+---------------------------------------------------------------------------------- */

@@ -1,5 +1,13 @@
 @import "variables";
 
-@import "base";
+@import "core/base";
+@import "core/layout";
 
-@import "header";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/image";
+@import "blocks/intro";
+@import "blocks/markets";
+@import "blocks/nav";
+
+@import "ie";

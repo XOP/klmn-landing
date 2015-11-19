@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 9 ]><html dir="ltr" class="oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr"><!--<![endif]-->
 <head>
     <%- partial("partials/_head", {title: "KLMN"}) %>
 </head>
 <body>
 
-<main>
-    <div class="container">
+<div class="root">
+    <main class="main">
 
         <%- yield %>
 
-    </div>
-</main>
+    </main>
+</div>
 
 <%- partial("partials/_footer") %>
 <%- partial("partials/_scriptsBottom") %>

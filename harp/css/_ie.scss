@@ -1,0 +1,26 @@
+@import "variables";
+
+.oldie {
+    body {
+        &:before {
+            @include cover();
+            z-index: 100;
+
+            content: "";
+            background: $c-bg;
+            }
+
+        &:after {
+            content: "Please update your browser to view the site";
+
+            position: absolute;
+            top: 0;
+            left: 0; right: 0;
+            padding: 50px;
+
+            background: $c-base;
+            color: $c-darkest;
+            text-align: center;
+            }
+        }
+    }

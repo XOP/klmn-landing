@@ -1,6 +1,6 @@
 {
   "name": "klmn-landing",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "author": "Evgeny Khoroshilov <stewiekillsloiss@gmail.com> (https://github.com/XOP)",
   "description": "KLMN promo site",
   "dependencies": {
@@ -8,17 +8,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "babel-core": "^6.1.21",
-    "babel-loader": "^6.1.0",
-    "babel-preset-es2015": "^6.1.18",
     "browser-sync": "^2.9.6",
     "cssnano": "^3.2.0",
     "del": "^2.0.2",
     "eslint": "^1.9.0",
     "eslint-config-xop": "^1.1.3",
-    "eslint-loader": "^1.0.0",
-    "eslint-plugin-react": "^3.8.0",
-    "exports-loader": "^0.6.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-concat-css": "^2.2.0",
@@ -28,27 +22,24 @@
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.0",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-svg-sprite": "^1.2.10",
-    "gulp-uglify": "^1.2.0",
+    "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.5",
     "gulp-zip": "^3.0.2",
-    "html-loader": "^0.3.0",
-    "imports-loader": "^0.6.4",
-    "json-loader": "^0.5.3",
     "merge2": "^0.3.6",
-    "postcss-at2x": "^2.0.0",
     "postcss-calc": "^5.0.0",
-    "postcss-mixins": "^1.0.1",
-    "postcss-scss": "^0.1.2",
-    "postcss-svg": "^1.0.1",
-    "precss": "^1.2.3",
-    "run-sequence": "^1.1.4",
-    "script-loader": "^0.6.1",
-    "webpack": "^1.12.2"
+    "postcss-image-inliner": "^0.1.4",
+    "run-sequence": "^1.1.4"
   },
   "scripts": {
-    "build": "harp compile harp",
+    "build-dev": "harp compile harp",
+    "deploy-dev": "surge harp\/www",
+    "build-deploy-dev": "npm run build-dev && npm run deploy-dev",
+    "serve": "harp server harp --port 4000",
+    "build-prod": "gulp build",
+    "build": "npm run build-dev && npm run build-prod",
+    "deploy": "surge public",
+    "build-deploy": "npm run build && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint assets\/js --ignore-pattern assets\/js\/lib\/*"
+    "lint": "eslint harp/js"
   }
 }

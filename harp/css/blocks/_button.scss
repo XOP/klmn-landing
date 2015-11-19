@@ -1,0 +1,88 @@
+/* Button
+---------------------------------------------------------------------------------- */
+
+/*
+cssg
+
+	button
+
+*/
+
+
+/* Vars
+-------------------------------------------------- */
+
+$button-top: #fdd300;
+$button-bot: #d09204;
+$button-border-top: $c-high;
+$button-border-bot: $c-brand-dark;
+$button-height: 32px;
+$button-width: 32px;
+$button-rad: $rad-normal;
+
+/* /Vars */
+
+
+
+.button {
+    position: relative;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 $grid-2;
+    min-width: $button-width;
+    height: $button-height;
+
+    cursor: pointer;
+    white-space: nowrap; // IE multiple words bug
+    overflow: visible;
+
+    border-radius: $button-rad;
+
+    border: 0 none;
+    //border: 1px solid transparent;
+    //border-top-color: $button-border-top;
+    //border-bottom-color: $button-border-bot;
+
+    font: normal #{$fs-s}/#{$button-height} $ff-main;
+    color: $c-light;
+    text-shadow: 0 1px 0 #D19405;
+    background: $button-top;
+    background: linear-gradient($button-top, $button-bot);
+
+    outline: none;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: -.01ex;
+
+    transition: background .2s ease;
+
+    &:hover {
+        color: $c-light;
+        background: $button-top;
+        background: linear-gradient($button-top, $button-bot);
+        }
+
+    &:focus {
+        box-shadow: 0 0 0 4px $c-high;
+        }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: none;
+        }
+
+    a#{&}, span#{&}, div#{&} {
+        display: inline-block;
+        vertical-align: bottom;
+        text-decoration: none;
+        }
+
+    input#{&},
+    button#{&} {
+        -webkit-appearance: none; // remove OS-native styling
+        }
+    }
+
+/* /Button
+---------------------------------------------------------------------------------- */
