@@ -5,14 +5,14 @@
 -------------------------------------------------- */
 
 /* Font-family */
-$ff-main: Tahoma, Verdana, sans-serif;
-$ff-alt: Helvetica, Arial, sans-serif;
+$ff-main:  Arial, Helvetica, Roboto, sans-serif;
+$ff-alt: 'BIP', sans-serif;
 
 
 /* Font-size */
 $fs-normal: 1.8rem;
 $fs-s: 1.4rem;
-$fs-head: 3.8rem;
+$fs-head: 3.2rem;
 
 
 /* Colors */
@@ -27,7 +27,7 @@ $c-brand-dark: #795300;
 $c-high: #ECE301;
 
 /* Line-height */
-$lh-normal: 1.6;
+$lh-normal: 1.3;
 $lh-head: 1.2;
 $lh-hero: 1.1;
 $lh-reset: 1;
@@ -73,9 +73,11 @@ $col-gap: $grid-2;
 
 
 /* Media queries */
-$media-s: 550px;
-$media-m: 750px;
-$media-n: 1000px;
+$media-s: "min-width: 550px";
+$media-m: "min-width: 750px";
+$media-n: "min-width: 1000px";
+
+$media-retina: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx)";
 
 /* /Vars */
 
@@ -108,6 +110,14 @@ $controls-always: true;
 @mixin cover {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+@mixin bgi($path, $name, $ext) {
+    background-image: url(#{$path}#{$name}.#{$ext});
+
+    @media #{$media-retina} {
+        background-image: url(#{$path}#{$name}@2x.#{$ext});
+        }
     }
 
 /* /Mixins */

@@ -82,6 +82,23 @@ gulp.task('favicon', function(){
 
 
 //
+// fonts
+gulp.task('fonts', function(){
+    return gulp.src(paths.fonts.src + '/**')
+        .pipe(gulp.dest(paths.fonts.dest));
+});
+
+
+//
+// inlining resources
+gulp.task('inline', function(){
+    return gulp.src('public/**/*.html')
+        .pipe($.inlineSource())
+        .pipe(gulp.dest('public/'));
+});
+
+
+//
 // browser sync
 gulp.task('sync', function(){
     browserSync.init({
@@ -116,6 +133,14 @@ gulp.task('clean', function(cb){
     ], cb);
 });
 
+// clean after inlining
+gulp.task('cleanup', function(cb){
+    return del([
+        'public/css',
+        'public/js'
+    ], cb);
+});
+
 // =================================================================================================================
 
 //
@@ -126,7 +151,10 @@ gulp.task('build', ['clean'], function(){
         'styles',
         'images',
         'scripts',
-        'favicon'
+        'favicon',
+        'fonts',
+        'inline',
+        'cleanup'
     );
 });
 

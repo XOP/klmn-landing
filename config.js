@@ -21,6 +21,10 @@ var config = {
             src : 'harp/www/img',
             dest : 'public/img'
         },
+        fonts : {
+            src : 'harp/www/fonts',
+            dest : 'public/fonts'
+        },
         deps : {
             normalize : 'node_modules/normalize.css'
         }

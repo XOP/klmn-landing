@@ -17,6 +17,8 @@ body {
 
 .root {
     flex-grow: 1;
+
+    padding: $grid-4 * 2 0;
     }
 
 /* /Root */
@@ -29,8 +31,18 @@ body {
     position: relative;
     box-sizing: border-box;
 
+    padding: 0 $grid-2;
+
     margin: 0 auto;
-	padding: $grid-2 0;
+    max-width: $width-normal;
+
+    @media($media-s) {
+        padding: 0 $grid-4;
+        }
+
+    @media($media-m) {
+        padding: 0 $grid-4 * 2;
+        }
     }
 
 /* /Common wrapper */
@@ -50,7 +62,7 @@ body {
 -------------------------------------------------- */
 
 .footer {
-
+    padding: 0 0 $grid-3 * 2;
     }
 
 /* /Footer */

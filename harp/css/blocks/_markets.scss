@@ -12,8 +12,39 @@ cssg
 */
 
 .markets {
-
+	margin-bottom: $grid-4;
+	text-align: center;
 	}
+
+.markets_i {
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 149px;
+	height: 44px;
+
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 100%;
+
+	margin: 0 $grid;
+
+	@media($media-s) {
+		margin: 0 $grid-2;
+		}
+	}
+
+	.markets_i__apple {
+		@include bgi('/img/', 'apple', 'png');
+		}
+
+	.markets_i__google {
+		@include bgi('/img/', 'google', 'png');
+		}
 
 /* /Market
 ---------------------------------------------------------------------------------- */

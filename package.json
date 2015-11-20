@@ -17,6 +17,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-concat-css": "^2.2.0",
     "gulp-if": "^1.2.5",
+    "gulp-inline-source": "^2.1.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-minify-html": "^1.0.4",
     "gulp-plumber": "^1.0.1",
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "build-dev": "harp compile harp",
-    "deploy-dev": "surge harp\/www",
+    "deploy-dev": "surge harp/www",
     "build-deploy-dev": "npm run build-dev && npm run deploy-dev",
     "serve": "harp server harp --port 4000",
     "build-prod": "gulp build",

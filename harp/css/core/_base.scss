@@ -15,10 +15,23 @@ body {
 
     font: normal #{$fs-normal}/#{$lh-normal} $ff-main;
     color: $c-base;
-	background: $c-bg url(../img/pattern.png) repeat;
+	background: $c-bg url(/img/pattern.png) repeat;
     }
 
 /* /Core */
+
+
+/* Fonts
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'BIP';
+    src: url('/fonts/bip.woff2') format('woff2'),
+    url('/fonts/bip.woff') format('woff'),
+    url('/fonts/bip.ttf') format('truetype');
+    }
+
+/* /Fonts */
 
 
 /* Links
@@ -55,7 +68,7 @@ ol, ul, menu {
 -------------------------------------------------- */
 
 p {
-	margin: $grid-2;
+	margin: $grid-2 0;
 	}
 
 /* /Paragrgaphs */

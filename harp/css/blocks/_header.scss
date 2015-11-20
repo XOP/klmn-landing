@@ -12,11 +12,15 @@ cssg
 
 h1,
 .header {
-    color: $c-brand;
-    font-size: $fs-head;
-    line-height: $lh-head;
+    margin: 0 0 $grid-4;
 
-    margin-bottom: $grid-2;
+    color: $c-brand;
+
+    font-size: $fs-head;
+    font-family: $ff-alt;
+    line-height: $lh-head;
+    letter-spacing: .1ex;
+    text-align: center;
 	}
 
 /* /Headers
