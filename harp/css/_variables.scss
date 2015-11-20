@@ -54,7 +54,7 @@ $grid-5: $grid * 5;
 
 /* Border-radius */
 $rad-normal: 3px;
-$rad-moder: 8px;
+$rad-moder: 12px;
 
 
 /* Shadow */
@@ -65,7 +65,8 @@ $sh-light: 0 2px 4px -2px rgba(0,0,0,.3);
 
 /* Container */
 $width-normal: 1000px;
-
+$width-s: 550px;
+$width-m: 750px;
 
 /* Column */
 $col: $grid * 6;
@@ -73,9 +74,9 @@ $col-gap: $grid-2;
 
 
 /* Media queries */
-$media-s: "min-width: 550px";
-$media-m: "min-width: 750px";
-$media-n: "min-width: 1000px";
+$media-s: "min-width: #{$width-s}";
+$media-m: "min-width: #{$width-m}";
+$media-n: "min-width: #{$width-normal}";
 
 $media-retina: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx)";
 

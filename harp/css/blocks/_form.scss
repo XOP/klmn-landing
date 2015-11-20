@@ -1,26 +1,22 @@
-/* Intro
+/* Form
 ---------------------------------------------------------------------------------- */
-
-@import "variables";
 
 /*
 cssg
 
-	intro
-		// todo
+	form
 
 */
 
-.intro {
-	margin-bottom: $grid-4;
-	text-align: center;
+.form {
 
-
-	img {
-		max-width: 100%;
-		height: auto;
-		}
 	}
 
-/* /Intro
+.form_i {
+    & + & {
+        margin-top: $grid-2;
+        }
+    }
+
+/* /Form
 ---------------------------------------------------------------------------------- */

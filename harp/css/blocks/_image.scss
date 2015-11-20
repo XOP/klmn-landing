@@ -7,12 +7,19 @@
 cssg
 
 	image
-	    img
+	    img . image_i
 
 */
 
 .image {
+	margin: $grid-4 0 $grid-3 * 2;
 
+	text-align: center;
+	}
+
+.image_i {
+	max-width: 100%;
+	height: auto;
 	}
 
 /* /Image

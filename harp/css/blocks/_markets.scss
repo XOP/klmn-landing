@@ -12,8 +12,12 @@ cssg
 */
 
 .markets {
-	margin-bottom: $grid-4;
+	margin-bottom: $grid-2;
 	text-align: center;
+
+	@media($media-m) {
+		margin-bottom: $grid-4;
+		}
 	}
 
 .markets_i {
@@ -33,8 +37,16 @@ cssg
 
 	margin: 0 $grid;
 
+	& + & {
+		margin-top: $grid;
+		}
+
 	@media($media-s) {
 		margin: 0 $grid-2;
+
+		& + & {
+			margin-top: 0;
+			}
 		}
 	}
 

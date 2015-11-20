@@ -66,4 +66,13 @@ npm run lint
 ```
 
 
+## Special links
+
+There are couple of pages which you cannot reach via navigation.
+One is obviously **404 page** - just get `/404` and here you go!
+
+The other is **single image** page.
+The key is `/image` in the location path.
+
+
 ## [License](LICENSE)
