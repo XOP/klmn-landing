@@ -5,10 +5,10 @@
 
 ## Requirements
 
-- NodeJS
-- Gulp
-- Harp
-- Surge (optional)
+- [NodeJS](https://nodejs.org/)
+- [Gulp](http://gulpjs.com/)
+- [Harp](http://harpjs.com/)
+- [Surge](https://surge.sh/) (optional)
 
 
 ## Install
@@ -68,7 +68,7 @@ npm run lint
 
 ## Special links
 
-There are couple of pages which you cannot reach via navigation.
+There are couple of pages which you cannot reach via navigation.  
 One is obviously **404 page** - just get `/404` and here you go!
 
 The other is **single image** page.
