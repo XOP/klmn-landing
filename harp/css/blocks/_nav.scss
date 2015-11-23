@@ -13,10 +13,11 @@ cssg
 */
 
 .nav {
+	margin: 0 auto;
+
 	font-size: $fs-s;
 	text-align: center;
-
-	margin: 0 auto;
+	user-select: none;
 	}
 
 .nav_i {
@@ -45,6 +46,12 @@ cssg
 .nav_a {
 	white-space: nowrap;
 	text-decoration: none;
+	border-radius: $rad-normal;
+
+	&:focus {
+		outline: none;
+		box-shadow: $sh-focus;
+		}
 	}
 
 /* /Navigation

@@ -14,6 +14,7 @@ cssg
 .markets {
 	margin-bottom: $grid-2;
 	text-align: center;
+	user-select: none;
 
 	@media($media-m) {
 		margin-bottom: $grid-4;
@@ -34,8 +35,14 @@ cssg
 	white-space: nowrap;
 	overflow: hidden;
 	text-indent: 100%;
+	border-radius: $rad-normal;
 
 	margin: 0 $grid;
+
+	&:focus {
+		outline: none;
+		box-shadow: $sh-focus;
+		}
 
 	& + & {
 		margin-top: $grid;

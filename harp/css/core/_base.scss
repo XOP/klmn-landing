@@ -34,6 +34,22 @@ body {
 /* /Fonts */
 
 
+/* Text
+-------------------------------------------------- */
+
+::-moz-selection {
+    background: $c-high;
+    color: $c-darkest;
+    }
+
+::selection {
+    background: $c-high;
+    color: $c-darkest;
+    }
+
+/* /Text */
+
+
 /* Links
 -------------------------------------------------- */
 

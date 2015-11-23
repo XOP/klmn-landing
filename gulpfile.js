@@ -41,7 +41,9 @@ gulp.task('styles', function() {
         .pipe($.postcss([
             autoprefixer({ browsers: Browsers }),
             imageInliner({
-                assetPaths: [paths.img.src]
+                assetPaths: [
+                    'public'
+                ]
             }),
             nano()
         ]))

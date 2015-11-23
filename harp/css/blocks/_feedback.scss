@@ -11,7 +11,7 @@ cssg
 
 .feedback {
     box-sizing: border-box;
-	padding: $grid-5;
+	padding: $grid-2;
     max-width: $width-m;
 
     margin: 0 auto;
@@ -19,6 +19,12 @@ cssg
 
     border-radius: $rad-moder;
     background: rgba(255, 255, 255, .15);
+
+    user-select: none;
+
+    @media ($media-s) {
+        padding: $grid-5;
+        }
 	}
 
 /* /Feedback
