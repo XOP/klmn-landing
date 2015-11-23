@@ -16,8 +16,8 @@ cssg
 	text-align: center;
 	user-select: none;
 
-	@media($media-m) {
-		margin-bottom: $grid-4;
+	@media #{$media-m} {
+		margin-bottom: 3vh;
 		}
 	}
 
@@ -48,7 +48,7 @@ cssg
 		margin-top: $grid;
 		}
 
-	@media($media-s) {
+	@media #{$media-s} {
 		margin: 0 $grid-2;
 
 		& + & {

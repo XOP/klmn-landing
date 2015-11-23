@@ -22,7 +22,7 @@ cssg
 
     user-select: none;
 
-    @media ($media-s) {
+    @media #{$media-s} {
         padding: $grid-5;
         }
 	}

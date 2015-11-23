@@ -6,7 +6,11 @@
 
 html {
     height: 100%;
-	font-size: 10px;
+	font-size: 9px;
+
+    @media #{$media-s} {
+        font-size: 10px;
+        }
     }
 
 body {
@@ -85,6 +89,10 @@ ol, ul, menu {
 
 p {
 	margin: $grid-2 0;
+
+    @media #{$media-s} {
+        margin: 2vh 0;
+        }
 	}
 
 /* /Paragrgaphs */

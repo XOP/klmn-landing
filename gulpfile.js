@@ -139,7 +139,7 @@ gulp.task('clean', function(cb){
 gulp.task('cleanup', function(cb){
     return del([
         'public/css',
-        'public/js'
+        'public/js/main.js'
     ], cb);
 });
 

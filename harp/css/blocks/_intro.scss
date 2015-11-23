@@ -12,9 +12,13 @@ cssg
 */
 
 .intro {
-	margin-bottom: $grid-4;
+	margin-bottom: $grid-2;
 	text-align: center;
 	user-select: none;
+
+	@media #{$media-s} {
+		margin-bottom: 3vh;
+		}
 
 	img {
 		max-width: 100%;

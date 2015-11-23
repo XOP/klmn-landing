@@ -12,7 +12,7 @@ cssg
 
 h1,
 .header {
-    margin: 0 0 $grid-4;
+    margin: 0 0 $grid-2;
 
     color: $c-brand;
 
@@ -21,6 +21,10 @@ h1,
     line-height: $lh-head;
     letter-spacing: .1ex;
     text-align: center;
+
+    @media #{$media-s} {
+        margin: 0 0 3vh;
+        }
 	}
 
 /* /Headers

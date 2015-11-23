@@ -75,9 +75,9 @@ $col-gap: $grid-2;
 
 
 /* Media queries */
-$media-s: "min-width: #{$width-s}";
-$media-m: "min-width: #{$width-m}";
-$media-n: "min-width: #{$width-normal}";
+$media-s: "(min-width: #{$width-s})";
+$media-m: "(min-width: #{$width-m})";
+$media-n: "(min-width: #{$width-normal})";
 
 $media-retina: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx)";
 

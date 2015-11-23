@@ -20,12 +20,9 @@ body {
 
     padding: $grid-2 0 0;
 
-    @media($media-s) {
-        padding: $grid-4 0 0;
-        }
-
-    @media($media-m) {
-        padding: $grid-4 * 2 0 0;
+    @media #{$media-m} {
+        display: flex;
+        width: 100%;
         }
     }
 
@@ -44,11 +41,11 @@ body {
     margin: 0 auto;
     max-width: $width-normal;
 
-    @media($media-s) {
+    @media #{$media-s} {
         padding: 0 $grid-4;
         }
 
-    @media($media-m) {
+    @media #{$media-m} {
         padding: 0 $grid-4 * 2;
         }
     }
@@ -70,12 +67,12 @@ body {
 -------------------------------------------------- */
 
 .footer {
-    padding: $grid-4 0;
+    padding: $grid-2 0;
 
     background: linear-gradient(transparent, $c-darkest 50%);
 
-    @media($media-m) {
-        padding-bottom: $grid-3 * 2;
+    @media #{$media-m} {
+        padding-bottom: 4vh;
         }
     }
 
@@ -86,7 +83,10 @@ body {
 -------------------------------------------------- */
 
 .main {
-
+    @media #{$media-m} {
+        flex: 1 1 auto;
+        align-self: center;
+        }
     }
 
 /* /Main */
