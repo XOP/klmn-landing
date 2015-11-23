@@ -150,8 +150,8 @@ gulp.task('cleanup', function(cb){
 gulp.task('build', ['clean'], function(){
     return runSequence(
         'html',
-        'styles',
         'images',
+        'styles',
         'scripts',
         'favicon',
         'fonts',
