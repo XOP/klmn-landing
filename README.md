@@ -1,6 +1,14 @@
 # klmn-landing
 
-> KLMN project promo site
+"KLMN project" promo site
+
+Plain-structured site built with [HarpJS](http://harpjs.com/) and custom post-processing:  
+- css inlining in `head`
+- crucial js logic inlining in `head`
+- images inlining to base64 using [PostCSS plugins](http://postcss.parts/)
+- html and css minification
+
+PageSpeed insights score: [100/100](https://developers.google.com/speed/pagespeed/insights/?url=klmn-promo.surge.sh) both for desktop and mobile.
 
 
 ## Requirements
